@@ -1,0 +1,256 @@
+.menu{
+    display: none;
+}
+.desktop-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+    color: var(--main-black-text);
+   
+}
+.desktop-menu li:first-child{
+color: var(--main-orange);
+}
+.desktop-menu li{
+    display: block;
+    margin-left: 90px;
+    margin-right: 30px;
+    cursor: pointer;
+    /* padding: 0 30px 0 0; */
+/*     padding: 0 30px 0 0; */
+}
+nav .logo{
+    width: 130px;
+    height: 130px;
+    margin-left: 90px;
+}
+/* .food-app{
+    background: none;
+}
+.food-app-background{
+    background-image: url("./images/Rectangle\ 48.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+} */
+.food-app{
+    background-image: url("./images/Rectangle\ 48\ \(3\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.food-app .desktop-title{
+    display: flex;
+    font-size: 5.8rem;
+    line-height: 8rem;
+    font-weight: bold;
+    color: white;
+}
+.mobile-title{
+    display: none;
+}
+.food-app p{
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: #F6F6F6;
+    font-weight: 700;
+
+}
+.food-app h2{
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+    font-weight: 500;
+    color: #F6F6F6;
+
+}
+.food-app div{
+    display: flex;
+    gap: 30px;
+}
+.button-two{
+    background-color: transparent;
+    color: var(--main-orange);
+    border: 2px solid white;
+    color: white;
+}
+.mobile-app-image{
+    display: none;
+}
+.mobile-app-desktop-image{
+    display: flex;
+    position: absolute;
+    top: 480px;
+    left: calc(50% - 300px);
+    width: 584px;
+    height: 700px;
+    object-fit: contain;
+}
+.mobile-app{
+    margin-top: 500px;
+    border-bottom: none;
+}
+.main-span{
+    font-size: 4.4rem;
+    line-height: 3.6rem;
+    font-weight: 600;
+    border-top: solid 3px  #E4E4E4;;
+    padding: 75px 110px 40px;
+}
+.main-create-account span{
+    display: none;
+}
+.main-create-account picture img{
+    width: 404px;
+    height: 650px;
+   display: block;
+   object-fit: cover;
+   
+}
+.main-create-account, .main-checkout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    background:  white;  
+   
+}
+.create-account-text, .main-checkout-text {
+    text-align: left;
+    /* padding: 100px 300px 0 0; */
+    gap: 20px;
+    background-color: white;
+    align-self: center;
+}
+
+.main-create-account picture{
+    grid-area: 1 / 1 / 2 / 2; 
+    justify-self: center;
+}
+.explore-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+
+}
+.explore-section span{
+    display: block;
+    background-image: url("./images/Rectangleexplore.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 470px;
+    height: 650px;
+
+    
+  
+    place-self: center;
+    /* width: 100vw;
+    height: 100vh; */
+    }
+.explore-section-text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 220px;
+    padding-bottom: 0;
+    gap: 20px;
+    justify-self: center;
+   
+}
+.main-checkout span{
+    width: 470px;
+    height: 650px;
+    background-size: contain;
+    justify-self: center;
+    grid-area: 1 / 1 / 2 / 2;
+
+}
+.action-section-desktop{
+    background-image: url("./images/Rectangle\ 47.jpg");
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.action-section{
+    display: none;
+}
+.action-section-desktop{
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    padding: 110px 24px;
+    gap: 30px;
+    
+    
+}
+ .action-section-desktop h1{
+    font-size: 4rem;
+    font-size: bold;
+    line-height: 5.7rem;
+    color: white; 
+}
+.action-section-desktop h2{
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: white;
+}
+.action-buttons-desktop{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+ .button-one-desktop, .button-two-desktop{
+   
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+
+}
+.button-one-desktop{
+    width: 155px;
+    height: 55px;
+    background-color: var(--main-orange);
+    }
+.button-two-desktop{
+    width: 155px;
+    height: 55px;
+    background-color: transparent;
+    border: solid 1px white; 
+    
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items:center;
+
+}
+.footer-logo{
+   display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-left: 20px;
+}
+.footer-span-desktop{
+    display: block;
+}
+.footer-span-mobile{
+    display: none;
+}
+

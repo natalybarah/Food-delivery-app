@@ -1,0 +1,278 @@
+:root{
+    --main-gray: #FAFAFA;
+    --main-orange: #FA4A0C;
+    --main-black-text: #252B42;
+    --second-text:  #737373;
+    --light-text:  #FFFFFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+
+}
+nav{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    width:100%;
+    min-width: 320px; 
+    height: 120px;
+    align-items: center;
+    margin-top: 0;
+}
+ nav .logo{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-left: 20px;
+}
+.menu-list{
+    display: none;
+}
+nav .menu{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.desktop-menu{
+    display: none;
+}
+.food-app{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    min-width: 414px;
+    padding: 60px 10px;
+    
+    align-items: center;
+    position: relative;
+    background: linear-gradient(to bottom, #FAFAFA, white
+    );
+    
+
+    
+  }
+
+
+.food-app p{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--second-text);
+}
+.food-app h1{
+
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-top: 20px;
+}
+.desktop-title{
+    display: none;
+}
+.food-app h2{
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--second-text);
+    line-height: 3.8rem;
+    padding: 20px;
+}
+.button{
+    margin-top: 20px;
+    width: 220px;
+    height: 70px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.button-one{
+    background-color: var(--main-orange);
+    border: none;
+    color: var(--light-text);
+    
+}
+.button-two{
+    background-color: transparent;
+    color: var(--main-orange);
+    border: 2px solid var(--main-orange);
+    
+}
+
+/* .app-images{
+    display: flex;
+    flex-direction: row ;
+    justify-items: center;
+    overflow: hidden;
+    width: 100vw;
+    max-width: px;
+    height: 
+    background-color: var(--main-gray);
+  
+    
+    
+}
+.image-left, .image-right {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+ 
+} */
+
+.mobile-app{
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 3.6rem;
+    text-align: center;
+    padding-bottom: 50px;
+    border-bottom: solid 3px  #E4E4E4;
+}
+.mobile-app-desktop-image{
+    display: none;
+}
+.main-checkout{
+    background: linear-gradient(to bottom, #FAFAFA, white
+    );
+    
+}
+.create-account-text, .main-checkout-text{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 60px 30px;
+    text-align: center;
+}
+.create-account-text, .main-checkout-text, .explore-section-text, h2:nth-child(1){
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    font-weight: bold;
+    color: var(--main-orange);
+}
+.create-account-text, .main-checkout-text, .explore-section-text, h1{
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 5.7rem;
+    color: #252B42;
+
+}
+.create-account-text, .main-checkout-text, .explore-section-text, h2:nth-child(3){
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+    font-weight: 500;
+    color: var(--second-text);
+}
+.main-create-account span{
+    display: inline-block;
+    background-image: url("./images/Rectangle\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.main-create-account picture img{
+    display: none;
+}
+.explore-section{
+    display: none;
+}
+.main-checkout span{
+    display: inline-block;
+    background-image: url("./images/Rectangle\ \(2\).jpg");
+    background-repeat: no-repeat; 
+    background-position: center;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.action-section, .action-section-desktop{
+    display: flex;
+    flex-direction: column;
+    background-color: #252B42;
+    text-align: center;
+    padding: 110px 24px;
+    gap: 30px;
+    
+    
+}
+.action-section h1{
+    font-size: 4rem;
+    font-size: bold;
+    line-height: 5.7rem;
+    color: white; 
+}
+.action-section h2{
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+    font-weight: 500;
+    color: var(--second-text);
+}
+.action-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.button-buy, .button-try {
+   
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    color: white;
+
+}
+.button-buy {
+    width: 120px;
+    height: 55px;
+    background-color: var(--main-orange);
+    }
+.button-try {
+    width: 155px;
+    height: 55px;
+    background-color: #252B42;
+    border: solid 1px white; 
+    
+}
+.action-section-desktop{
+  display: none;
+}
+/* footer{
+    display: flex;
+    justify-content: center;
+
+}
+footer span{
+   text-align: center;
+
+} */
+
+.footer-social-media-images{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+footer{
+    height: 150px;
+    color: var(--second-text);
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    margin-top: 15px;
+}
+.icon{
+    margin-left: 20px;
+}
+.footer-span-desktop, .footer-logo {
+    display: none;
+}
+
